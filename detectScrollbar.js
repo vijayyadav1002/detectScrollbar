@@ -10,7 +10,7 @@
     ;
     (function getAllElements(el){
         counter++; 
-        sum=el.offsetLeft + el.offsetWidth;    
+        var sum=el.offsetLeft + el.offsetWidth;    
         if(sum>=window.innerWidth){
             culpritElements.push(el);        
             el.style.boxShadow = "0px 0px 6px red";
